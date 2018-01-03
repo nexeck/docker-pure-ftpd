@@ -35,4 +35,4 @@ pure-pw mkdb ${FTP_DIR}/pureftpd.pdb
 #	-j : If the home directory of a user doesn't exist, automatically create it.
 #	-l <puredb:path> : PureDB file
 echo "Starting pure-ftpd"
-exec /usr/sbin/pure-ftpd -c 50 -C 5 -l puredb:${FTP_DIR}/pureftpd.pdb -j -E -p 30000:30009 -d
+exec /usr/sbin/pure-ftpd -c 50 -C 5 -l puredb:${FTP_DIR}/pureftpd.pdb -j -E -p 30000:30009
