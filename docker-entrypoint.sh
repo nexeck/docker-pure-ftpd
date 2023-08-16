@@ -26,8 +26,6 @@ expect -c "
 echo "Create puredb"
 pure-pw mkdb ${FTP_DIR}/pureftpd.pdb
 
-/usr/sbin/syslog-stdout &
-
 # Option explanations :
 #	-c <int> : Allow maximum of clients to be connected
 #	-C <int> : Limit the number of simultaneous connections coming from the same IP address.

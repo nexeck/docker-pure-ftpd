@@ -1,9 +1,6 @@
-FROM alpine:3.7
+FROM alpine:3.18
 
 RUN apk add --no-cache curl expect pure-ftpd --repository http://dl-3.alpinelinux.org/alpine/edge/testing/
-
-ENV SYSLOG_STDOUT_VERSION 1.1.1
-RUN curl -ksL "https://github.com/timonier/syslog-stdout/releases/download/v${SYSLOG_STDOUT_VERSION}/syslog-stdout.tar.gz" | tar fxz - -C /usr/sbin
 
 ENV FTP_DIR /srv/ftp
 ENV USERNAME username
