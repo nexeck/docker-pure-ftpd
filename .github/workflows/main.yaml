@@ -1,8 +1,5 @@
-name: Build & Deploy
-on:
-  push:
-    tags:
-      - "*"
+name: Build
+on: push
 
 jobs:
   Build:
