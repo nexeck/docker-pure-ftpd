@@ -19,4 +19,4 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: nexeck/docker-pure-ftpd:latest
+          tags: ghcr.io/nexeck/docker-pure-ftpd:latest
