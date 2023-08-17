@@ -10,5 +10,6 @@ RUN adduser -D -h ${FTP_DIR} -s /etc ftpv
 
 EXPOSE 21 30000-30009
 
-COPY docker-entrypoint.sh /
+COPY rootfs /
+
 ENTRYPOINT [ "/docker-entrypoint.sh" ]
